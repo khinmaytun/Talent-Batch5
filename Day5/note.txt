@@ -1,0 +1,14 @@
+- inner width is "1140px"
+- for card sale section of background, please use the "clip-path" property
+- please adjust the responsive for "992px" and "576px"
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+            // alert('asdfa');
+            var menubar = document.getElementById('menu-bar');
+            var mainmenu = document.getElementById('main-menu');
+            menubar.addEventListener('click', function() {
+                mainmenu.style.display = mainmenu.style.display == 'none' ? 'flex' : 'none';
+            })
+        })
