@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <form>
+        <label for="">Input</label>
+        <input type="text" id="num-input">
+        <div class="info"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, exercitationem odio nesciunt officia sint consequatur temporibus deserunt possimus reiciendis ex minima quae? Ipsum, nemo hic id sequi voluptate harum corporis!</p>
+        <div class="container">
+            <p class="info"></p>
+        </div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let val = document.getElementById('num-input');
+            let info = document.getElementsByClassName('info')[0];
+            val.addEventListener('input', function() {
+                let valueInput = this.value; 
+                info.innerHTML = `Original: ${valueInput} <br> Decimal: ${valueInput.toFixed(2)}`;
+            })
+            
+            
+        })
+    </script>
+</body>
+</html>

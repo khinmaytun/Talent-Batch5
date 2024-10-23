@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "JavaScript is fun!";
+
+        // length
+        console.log(str.length); // Output: 17
+
+        // charAt()
+        console.log(str.charAt(0)); // Output: J
+
+        // indexOf()
+        console.log(str.indexOf("is")); // Output: 11
+
+        // lastIndexOf()
+        console.log(str.lastIndexOf("a")); // Output: 3
+
+        // includes()
+        console.log(str.includes("fun")); // Output: true
+
+        // substring()
+        console.log(str.substring(0, 10)); // Output: JavaScript
+
+        // slice()
+        console.log(str.slice(0, 10)); // Output: JavaScript
+        console.log(str.slice(-4)); // Output: fun!
+
+        // substr()
+        console.log(str.substr(14, 3)); // Output: fun
+
+        // toUpperCase()
+        console.log(str.toUpperCase()); // Output: JAVASCRIPT IS FUN!
+
+        // toLowerCase()
+        console.log(str.toLowerCase()); // Output: javascript is fun!
+
+        // trim()
+        let strWithSpaces = "   JavaScript is fun!   ";
+        console.log(strWithSpaces.trim()); // Output: JavaScript is fun!
+
+        // replace()
+        console.log(str.replace("fun", "awesome")); // Output: JavaScript is awesome!
+
+        // split()
+        console.log(str.split(" ")); // Output: ["JavaScript", "is", "fun!"]
+
+        // concat()
+        let str1 = "Hello";
+        let str2 = "World";
+        console.log(str1.concat(", ", str2, "!")); // Output: Hello, World!
+
+        // repeat()
+        console.log(str1.repeat(3)); // Output: HelloHelloHello
+
+        // startsWith()
+        console.log(str.startsWith("JavaScript")); // Output: true
+
+        // endsWith()
+        console.log(str.endsWith("fun!")); // Output: true
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Number</label>
+        <input type="number" id="input-number">
+        <div id="info"></div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let inputNum = document.getElementById('input-number');
+            // console.log(typeof inputNum.value)
+            inputNum.addEventListener('input', function() {
+                let currentNum = Number(this.value);
+
+                document.getElementById('info').innerHTML =`Original value: ${currentNum}<br>
+                Two Decimal Places (2) : ${currentNum.toFixed(2)}<br>
+                Exponential Form (2): ${currentNum.toExponential(2)}<br>
+                Is Integer : ${Number.isInteger(currentNum)}`;
+            })
+        })
+    </script>
+</body>
+</html>

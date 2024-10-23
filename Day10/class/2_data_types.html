@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Primitive Data Types
+
+        // String
+        let name = "Alice";
+        console.log(name); // Output: Alice
+        console.log(typeof name); // Output: string
+
+        // Number
+        let age = 30;
+        console.log(age); // Output: 30
+        console.log(typeof age); // Output: number
+
+        // Boolean
+        let isActive = true;
+        console.log(isActive); // Output: true
+        console.log(typeof isActive); // Output: boolean
+
+        // Null
+        let emptyValue = null;
+        console.log(emptyValue); // Output: null
+        console.log(typeof emptyValue); // Output: object (This is a quirk in JavaScript)
+
+        // Undefined
+        let notAssigned;
+        console.log(notAssigned); // Output: undefined
+        console.log(typeof notAssigned); // Output: undefined
+
+
+        // Non-Primitive Data Types
+
+        // Object
+        let person = {
+            name: 'Alice',
+            age: 30
+        };
+        console.log(person); // Output: { name: 'Alice', age: 30 }
+        console.log(typeof person); // Output: object
+
+        // Array
+        let numbers = [1, 2, 3, 4, 5];
+        console.log(numbers); // Output: [1, 2, 3, 4, 5]
+        console.log(typeof numbers); // Output: object
+
+        // Function
+        function greet(name) {
+            return `Hello, ${name}!`;
+        }
+        console.log(greet('Alice')); // Output: Hello, Alice!
+        console.log(typeof greet); // Output: function
+
+        // Performing operations on non-primitive data types
+
+        // Adding a new property to the object
+        person.city = 'New York';
+        console.log(person); // Output: { name: 'Alice', age: 30, city: 'New York' }
+
+        // Adding a new element to the array
+        numbers.push(6);
+        console.log(numbers); // Output: [1, 2, 3, 4, 5, 6]
+
+        // Modifying an existing element in the array
+        numbers[0] = 10;
+        console.log(numbers); // Output: [10, 2, 3, 4, 5, 6]
+
+        // Changing a property of the object
+        person.age = 31;
+        console.log(person); // Output: { name: 'Alice', age: 31, city: 'New York' }
+
+    </script>
+</body>
+</html>

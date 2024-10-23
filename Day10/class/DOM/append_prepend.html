@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #container {
+      border: 1px solid #000;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <p>Middle Paragraph</p>
+</div>
+
+<button id="appendButton">Append Content</button>
+<button id="prependButton">Prepend Content</button>
+
+<script>
+let container = document.getElementById('container');
+let appendButton = document.getElementById('appendButton');
+let prependButton = document.getElementById('prependButton');
+
+appendButton.addEventListener('click', function() {
+  let newParagraph = document.createElement('p');
+  newParagraph.textContent = 'Appended Paragraph';
+  container.append(newParagraph, ' Appended Text.');
+});
+
+prependButton.addEventListener('click', function() {
+  let newParagraph = document.createElement('p');
+  newParagraph.textContent = 'Prepended Paragraph';
+  container.prepend('Prepended Text. ', newParagraph);
+});
+</script>
+
+</body>
+</html>

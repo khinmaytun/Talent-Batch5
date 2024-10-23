@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+</head>
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="">User Name</label>
+            <input type="text" id="user-name">
+        </div>
+        <div class="form-group">
+            <label for="">Age</label>
+            <input type="number" min="18" max="100" id="user-age">
+        </div>
+        <div class="" id="user-info"></div>
+    </form>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+        let name = document.getElementById('user-name');
+        let age = document.getElementById('user-age');
+        let userInfo = document.getElementById('user-info');
+        
+        function userInfoUpdate() {
+            let nameInput = name.value.trim();
+            nameInput = nameInput.charAt(0).toUpperCase()+nameInput.slice(1);
+            let ageInput = age.value;
+            let message = '';
+            if(nameInput && ageInput) {
+                message = `My name is "${nameInput}". I'm ${ageInput} years old.`;
+            }else if(nameInput) {
+                message = `My name is "${nameInput}".`;
+            }else if(ageInput) {
+                message = `I'm ${ageInput} years old.`;
+            }            
+            userInfo.innerHTML = message;        
+        }
+        name.addEventListener('input', userInfoUpdate); 
+        age.addEventListener('input', userInfoUpdate);
+       })
+    </script>
+</body>
+</html>

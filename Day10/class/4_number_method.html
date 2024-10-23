@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let num = 123.456;
+
+        // toString()
+        console.log(num.toString()); // Output: "123.456"
+
+        // toFixed()
+        console.log(num.toFixed(2)); // Output: "123.46"
+        console.log(num.toFixed(0)); // Output: "123"
+
+        // toExponential()
+        console.log(num.toExponential(2)); // Output: "1.23e+2"
+        console.log(num.toExponential(4)); // Output: "1.2346e+2"
+
+        // toPrecision()
+        console.log(num.toPrecision(4)); // Output: "123.5"
+        console.log(num.toPrecision(6)); // Output: "123.456"
+
+        // valueOf()
+        let numObj = new Number(456);
+        console.log(numObj.valueOf()); // Output: 456
+
+        // Number.isInteger()
+        console.log(Number.isInteger(123)); // Output: true
+        console.log(Number.isInteger(123.456)); // Output: false
+
+        // Number.isNaN()
+        console.log(Number.isNaN(NaN)); // Output: true
+        console.log(Number.isNaN(123)); // Output: false
+
+        console.log(isNaN(123412));  // false
+        console.log(isNaN(NaN));     // true
+        console.log(isNaN("hello")); // true
+        console.log(isNaN("1234"));  // false (coerced to a number)
+
+        // Number.isFinite()
+        console.log(Number.isFinite(123)); // Output: true
+        console.log(Number.isFinite(Infinity)); // Output: false
+        console.log(isFinite('Hello')); //Output: false
+
+
+        // Number.parseFloat()
+        console.log(Number.parseFloat("123.456")); // Output: 123.456
+        console.log(Number.parseFloat("123abc")); // Output: 123
+
+        // Number.parseInt()
+        console.log(Number.parseInt("123.456")); // Output: 123
+        console.log(Number.parseInt("123abc")); // Output: 123
+        console.log(Number.parseInt("101", 2)); // Output: 5 (parses "101" as a binary number)
+
+    </script>
+</body>
+</html>

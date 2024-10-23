@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cssText Example</title>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 200px; /* Center text vertically */
+      transition: all 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+<div id="myDiv">Hello!</div>
+<button id="changeStyleButton">Change Style</button>
+
+<script>
+  // JavaScript to change styles using cssText
+  let myDiv = document.getElementById('myDiv');
+  let changeStyleButton = document.getElementById('changeStyleButton');
+
+  changeStyleButton.addEventListener('click', function() {
+    // Use cssText to set multiple styles at once
+    myDiv.style.cssText = `
+      width: 300px;
+      height: 300px;
+      background-color: lightblue;
+      border: 2px solid red;
+      color: darkblue;
+      font-size: 24px;
+      line-height: 300px; /* Center text vertically */
+      text-align: center; /* Center text horizontally */
+    `;
+  });
+</script>
+
+</body>
+</html>

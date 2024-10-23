@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id-selector">This is id selector</p>
+    <button>Change Text</button>
+    <script>
+        let idselect = document.getElementById('id-selector');
+        let buttonselect = document.getElementsByTagName('button');
+        buttonselect[0].addEventListener('click', function() {
+            idselect.innerText = 'Already change text';
+            idselect.style.color = 'red';
+        });
+    </script>
+    
+</body>
+</html>
