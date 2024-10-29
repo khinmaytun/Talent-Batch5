@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="bg-white text-black w-full px-4 py-3 min-h-16 shadow-lg fixed top-0 left-0">
+        <nav class="flex justify-between">
+            <div>
+                <button id="hambarger-bar" class="mr-3"><i class="fa-solid fa-bars"></i></button>
+                <a href="" class="font-dancing text-3xl font-extrabold text-orange">Dashboard</a>
+            </div>
+            <ul class="flex gap-x-16">
+                <li class="dropdown"><a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <ul>
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href=""><i class="fa-solid fa-bell"></i></a>
+                    <ul>
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href=""><i class="fa-solid fa-user"></i></a>
+                    <ul>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mt-16 flex">
+        <aside class="">
+            <ul class="*:mb-2">
+                <li><a href="./index.html"><i class="mr-3 fa-solid fa-chart-simple"></i> Home</a></li>
+                <li><a href="./tables.html"><i class="mr-3 fa-solid fa-rectangle-list"></i>Tables</a></li>
+                <li><a href="./products.html"><i class="mr-3 fa-solid fa-rectangle-list"></i>Products</a></li>
+                <li><a href="./faq.html"><i class="mr-3 fa-solid fa-table-columns"></i> FAQ</a></li>
+                <li><a href="./contact.html"><i class="mr-3 fa-solid fa-table-columns"></i> Contact</a></li>
+            </ul>
+        </aside>
+        <div id="main-content">
+            <div class="content-inr p-6">
+                <h3 class="mb-6">Products</h3>                
+                <div class="porduct-sec grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+            </div>
+            <footer class="bg-gray flex justify-between px-4 py-6">
+                <p>&copy; Right 2024</p>
+                <ul class="flex gap-4">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+    <script src="./assets/js/styles.js"></script>
+</body>
+</html>

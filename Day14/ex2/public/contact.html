@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="bg-white text-black w-full px-4 py-3 min-h-16 shadow-lg fixed top-0 left-0">
+        <nav class="flex justify-between">
+            <div>
+                <button id="hambarger-bar" class="mr-3"><i class="fa-solid fa-bars"></i></button>
+                <a href="" class="font-dancing text-3xl font-extrabold text-orange">Dashboard</a>
+            </div>
+            <ul class="flex gap-x-16">
+                <li class="dropdown"><a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <ul>
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href=""><i class="fa-solid fa-bell"></i></a>
+                    <ul>
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href=""><i class="fa-solid fa-user"></i></a>
+                    <ul>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mt-16 flex">
+        <aside class="">
+            <ul class="*:mb-2">
+                <li><a href="./index.html"><i class="mr-3 fa-solid fa-chart-simple"></i> Home</a></li>
+                <li><a href="./tables.html"><i class="mr-3 fa-solid fa-rectangle-list"></i>Tables</a></li>
+                <li><a href="./products.html"><i class="mr-3 fa-solid fa-rectangle-list"></i>Products</a></li>
+                <li><a href="./faq.html"><i class="mr-3 fa-solid fa-table-columns"></i> FAQ</a></li>
+                <li><a href="./contact.html"><i class="mr-3 fa-solid fa-table-columns"></i> Contact</a></li>
+            </ul>
+        </aside>
+        <div id="main-content">
+            <div class="content-inr p-6">
+                <h3 class="mb-6">Form</h3>
+                <div class="grid grid-cols-2 gap-4">                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-md shadow-sm text-blue p-4 border border-gray">
+                            <span class="text-2xl"><i class="fa-solid fa-location-dot"></i></span>
+                            <h4 class="text-xl my-4">Address</h4>
+                            <p class="text-black">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="bg-white rounded-md shadow-sm text-blue p-4 border border-gray">
+                            <span class="text-2xl"><i class="fa-solid fa-location-dot"></i></span>
+                            <h4 class="text-xl my-4">Address</h4>
+                            <p class="text-black">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="bg-white rounded-md shadow-sm text-blue p-4 border border-gray">
+                            <span class="text-2xl"><i class="fa-solid fa-location-dot"></i></span>
+                            <h4 class="text-xl my-4">Address</h4>
+                            <p class="text-black">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="bg-white rounded-md shadow-sm text-blue p-4 border border-gray">
+                            <span class="text-2xl"><i class="fa-solid fa-location-dot"></i></span>
+                            <h4 class="text-xl my-4">Address</h4>
+                            <p class="text-black">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <div class="shadow-lg bg-white p-4 border border-gray">
+                        <form action="" id="contact-form" class="*:mb-5">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="form-group"><input type="text" name="name" placeholder="Your Name" class="w-full"></div>
+                                <div class="form-group"><input type="email" name="email" placeholder="Your Eamil" class="w-full"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Your Subject" class="w-full">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="w-full" name="message" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" value="Send Message" class="bg-blue text-white cursor-pointer">
+                            </div>
+                        </form>
+                        <p id="test"></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-gray flex justify-between px-4 py-6">
+                <p>&copy; Right 2024</p>
+                <ul class="flex gap-4">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+    <script src="./assets/js/styles.js"></script>
+</body>
+</html>

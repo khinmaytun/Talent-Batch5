@@ -1,0 +1,3 @@
+For FAQ
+---------
+https://dummyjson.com/recipes?limit=10&skip=10&select=name,instructions
